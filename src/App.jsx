@@ -138,6 +138,7 @@ function App() {
             url={videot}
             playing // AutoPlay
             controls // Optional: Show video controls
+            width="95%"
           />
         </div>
       </div>
