@@ -92,10 +92,8 @@ function App() {
       <div className="px-8 md:px-24 py-12 text-white font-extrabold flex flex-col md:flex-row justify-between items-center space-x-8">
         <div className="text-center md:text-left">
           <h1 className="text-xl md:text-4xl mb-3">
-            Discover a new era of crypto
-            <span className="block leading-loose">
-              inspired by Donald Trump’s iconic return
-            </span>
+            MAKE AMERICA GREAT AGAIN
+            <span className="block leading-loose">TRUMP FOR PRESIDENT</span>
           </h1>
 
           <StaticButton
@@ -140,7 +138,6 @@ function App() {
             url={videot}
             playing // AutoPlay
             controls // Optional: Show video controls
-            width="95%"
           />
         </div>
       </div>
