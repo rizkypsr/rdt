@@ -5,6 +5,8 @@ import trump from "./assets/trump.png";
 import one from "./assets/1.jpg";
 import two from "./assets/22.png";
 import three from "./assets/33.png";
+import dex from "./assets/dex.png";
+import dext from "./assets/dext.png";
 
 const AnimatedButton = ({ text, href, bgType, bgValue, textColor }) => {
   const isImageBackground = bgType === "image";
@@ -70,6 +72,12 @@ function App() {
             textColor="#FFFFFF" // Text color (won't be visible when bgType is 'image')
           />
           <AnimatedButton
+            href="https://dexscreener.com/solana/bsqmjijemutqbqdfywycknjwirt11f62tytnqabspnnl"
+            bgType="image" // Use 'image' for background image
+            bgValue={dex} // Example background image URL
+            textColor="#FFFFFF" // Text color (won't be visible when bgType is 'image')
+          />
+          <AnimatedButton
             text="BUY $RDT"
             href="https://pump.fun/4drdawrzjEhfEtuH8CT8mSVsyMZvGm87vghpCFffpump"
             bgType="color" // Use 'color' for background color
@@ -106,6 +114,12 @@ function App() {
               href="https://t.me/rdtportal"
               bgType="image" // Use 'image' for background image
               bgValue={teleLogo} // Example background image URL
+              textColor="#FFFFFF" // Text color (won't be visible when bgType is 'image')
+            />
+            <AnimatedButton
+              href="https://dexscreener.com/solana/bsqmjijemutqbqdfywycknjwirt11f62tytnqabspnnl"
+              bgType="image" // Use 'image' for background image
+              bgValue={dex} // Example background image URL
               textColor="#FFFFFF" // Text color (won't be visible when bgType is 'image')
             />
             <AnimatedButton
