@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+.shadow-solid {
+  box-shadow: 4px 4px 0px #000000;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(4px, 4px);
+}
