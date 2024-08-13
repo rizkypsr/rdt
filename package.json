@@ -2,7 +2,7 @@
   "name": "rdt",
   "private": true,
   "version": "0.0.0",
-  "homepage": " ",
+  "homepage": "https://rizkypsr.github.io/rdt",
   "type": "module",
   "scripts": {
     "dev": "vite",
