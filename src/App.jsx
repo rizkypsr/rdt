@@ -7,6 +7,8 @@ import two from "./assets/22.png";
 import three from "./assets/33.png";
 import dex from "./assets/dex.png";
 import dext from "./assets/dext.png";
+import videot from "./assets/video.mp4";
+import ReactPlayer from "react-player";
 
 const AnimatedButton = ({ text, href, bgType, bgValue, textColor }) => {
   const isImageBackground = bgType === "image";
@@ -40,7 +42,7 @@ const StaticButton = ({ text, bgValue, textColor }) => {
 
   return (
     <div
-      className={`font-extrabold text-sm md:text-2xl rounded shadow-solid focus:outline-none transform active:translate-x-1 active:translate-y-1 transition-transform duration-100 py-2 px-4 inline-block`}
+      className={`font-extrabold text-xs md:text-2xl rounded shadow-solid focus:outline-none transform active:translate-x-1 active:translate-y-1 transition-transform duration-100 py-2 px-4 inline-block`}
       style={{ ...backgroundStyle, color: textColor }}
     >
       {text}
@@ -87,7 +89,7 @@ function App() {
         </div>
       </nav>
 
-      <div className="px-8 md:px-24 py-12 text-white font-extrabold flex flex-col md:flex-row justify-between items-center">
+      <div className="px-8 md:px-24 py-12 text-white font-extrabold flex flex-col md:flex-row justify-between items-center space-x-8">
         <div className="text-center md:text-left">
           <h1 className="text-xl md:text-4xl mb-3">
             Discover a new era of crypto
@@ -132,8 +134,14 @@ function App() {
           </div>
         </div>
 
-        <div className="mt-8 md:mt-0">
-          <img src={trump} alt="" className="w-full md:w-auto" />
+        <div className="mt-8 md:mt-0 block md:hidden lg:block">
+          {/* <img src={trump} alt="" className="w-full md:w-auto" /> */}
+          <ReactPlayer
+            url={videot}
+            playing // AutoPlay
+            controls // Optional: Show video controls
+            width="95%"
+          />
         </div>
       </div>
 
